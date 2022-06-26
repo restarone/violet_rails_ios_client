@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E2A28F62868944600585E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A28F52868944600585E9E /* AppDelegate.swift */; };
+		3E2A28F82868944600585E9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A28F72868944600585E9E /* SceneDelegate.swift */; };
+		3E2A28FA2868944600585E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A28F92868944600585E9E /* ViewController.swift */; };
+		3E2A28FD2868944600585E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2A28FB2868944600585E9E /* Main.storyboard */; };
+		3E2A28FF2868944800585E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2A28FE2868944800585E9E /* Assets.xcassets */; };
+		3E2A29022868944800585E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2A29002868944800585E9E /* LaunchScreen.storyboard */; };
+		3E2A290D2868944800585E9E /* Violet_RailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A290C2868944800585E9E /* Violet_RailsTests.swift */; };
+		3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29162868944800585E9E /* Violet_RailsUITests.swift */; };
+		3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E2A29092868944800585E9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E2A28EA2868944600585E9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E2A28F12868944600585E9E;
+			remoteInfo = "Violet Rails";
+		};
+		3E2A29132868944800585E9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E2A28EA2868944600585E9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E2A28F12868944600585E9E;
+			remoteInfo = "Violet Rails";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E2A28F22868944600585E9E /* Violet Rails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Violet Rails.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2A28F52868944600585E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E2A28F72868944600585E9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E2A28F92868944600585E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E2A28FC2868944600585E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E2A28FE2868944800585E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E2A29012868944800585E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E2A29032868944800585E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2A29082868944800585E9E /* Violet RailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Violet RailsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2A290C2868944800585E9E /* Violet_RailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsTests.swift; sourceTree = "<group>"; };
+		3E2A29122868944800585E9E /* Violet RailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Violet RailsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2A29162868944800585E9E /* Violet_RailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITests.swift; sourceTree = "<group>"; };
+		3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E2A28EF2868944600585E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A29052868944800585E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A290F2868944800585E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E2A28E92868944600585E9E = {
+			isa = PBXGroup;
+			children = (
+				3E2A28F42868944600585E9E /* Violet Rails */,
+				3E2A290B2868944800585E9E /* Violet RailsTests */,
+				3E2A29152868944800585E9E /* Violet RailsUITests */,
+				3E2A28F32868944600585E9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E2A28F32868944600585E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A28F22868944600585E9E /* Violet Rails.app */,
+				3E2A29082868944800585E9E /* Violet RailsTests.xctest */,
+				3E2A29122868944800585E9E /* Violet RailsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E2A28F42868944600585E9E /* Violet Rails */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A28F52868944600585E9E /* AppDelegate.swift */,
+				3E2A28F72868944600585E9E /* SceneDelegate.swift */,
+				3E2A28F92868944600585E9E /* ViewController.swift */,
+				3E2A28FB2868944600585E9E /* Main.storyboard */,
+				3E2A28FE2868944800585E9E /* Assets.xcassets */,
+				3E2A29002868944800585E9E /* LaunchScreen.storyboard */,
+				3E2A29032868944800585E9E /* Info.plist */,
+			);
+			path = "Violet Rails";
+			sourceTree = "<group>";
+		};
+		3E2A290B2868944800585E9E /* Violet RailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A290C2868944800585E9E /* Violet_RailsTests.swift */,
+			);
+			path = "Violet RailsTests";
+			sourceTree = "<group>";
+		};
+		3E2A29152868944800585E9E /* Violet RailsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A29162868944800585E9E /* Violet_RailsUITests.swift */,
+				3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */,
+			);
+			path = "Violet RailsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E2A28F12868944600585E9E /* Violet Rails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E2A291C2868944800585E9E /* Build configuration list for PBXNativeTarget "Violet Rails" */;
+			buildPhases = (
+				3E2A28EE2868944600585E9E /* Sources */,
+				3E2A28EF2868944600585E9E /* Frameworks */,
+				3E2A28F02868944600585E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Violet Rails";
+			productName = "Violet Rails";
+			productReference = 3E2A28F22868944600585E9E /* Violet Rails.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E2A29072868944800585E9E /* Violet RailsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E2A291F2868944800585E9E /* Build configuration list for PBXNativeTarget "Violet RailsTests" */;
+			buildPhases = (
+				3E2A29042868944800585E9E /* Sources */,
+				3E2A29052868944800585E9E /* Frameworks */,
+				3E2A29062868944800585E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E2A290A2868944800585E9E /* PBXTargetDependency */,
+			);
+			name = "Violet RailsTests";
+			productName = "Violet RailsTests";
+			productReference = 3E2A29082868944800585E9E /* Violet RailsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E2A29112868944800585E9E /* Violet RailsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E2A29222868944800585E9E /* Build configuration list for PBXNativeTarget "Violet RailsUITests" */;
+			buildPhases = (
+				3E2A290E2868944800585E9E /* Sources */,
+				3E2A290F2868944800585E9E /* Frameworks */,
+				3E2A29102868944800585E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E2A29142868944800585E9E /* PBXTargetDependency */,
+			);
+			name = "Violet RailsUITests";
+			productName = "Violet RailsUITests";
+			productReference = 3E2A29122868944800585E9E /* Violet RailsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E2A28EA2868944600585E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3E2A28F12868944600585E9E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3E2A29072868944800585E9E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3E2A28F12868944600585E9E;
+					};
+					3E2A29112868944800585E9E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3E2A28F12868944600585E9E;
+					};
+				};
+			};
+			buildConfigurationList = 3E2A28ED2868944600585E9E /* Build configuration list for PBXProject "Violet Rails" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E2A28E92868944600585E9E;
+			productRefGroup = 3E2A28F32868944600585E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E2A28F12868944600585E9E /* Violet Rails */,
+				3E2A29072868944800585E9E /* Violet RailsTests */,
+				3E2A29112868944800585E9E /* Violet RailsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E2A28F02868944600585E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A29022868944800585E9E /* LaunchScreen.storyboard in Resources */,
+				3E2A28FF2868944800585E9E /* Assets.xcassets in Resources */,
+				3E2A28FD2868944600585E9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A29062868944800585E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A29102868944800585E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E2A28EE2868944600585E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A28FA2868944600585E9E /* ViewController.swift in Sources */,
+				3E2A28F62868944600585E9E /* AppDelegate.swift in Sources */,
+				3E2A28F82868944600585E9E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A29042868944800585E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A290D2868944800585E9E /* Violet_RailsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E2A290E2868944800585E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */,
+				3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E2A290A2868944800585E9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E2A28F12868944600585E9E /* Violet Rails */;
+			targetProxy = 3E2A29092868944800585E9E /* PBXContainerItemProxy */;
+		};
+		3E2A29142868944800585E9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E2A28F12868944600585E9E /* Violet Rails */;
+			targetProxy = 3E2A29132868944800585E9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E2A28FB2868944600585E9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E2A28FC2868944600585E9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E2A29002868944800585E9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E2A29012868944800585E9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E2A291A2868944800585E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E2A291B2868944800585E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E2A291D2868944800585E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Violet Rails/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-Rails";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E2A291E2868944800585E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Violet Rails/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-Rails";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E2A29202868944800585E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-RailsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Violet Rails.app/Violet Rails";
+			};
+			name = Debug;
+		};
+		3E2A29212868944800585E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-RailsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Violet Rails.app/Violet Rails";
+			};
+			name = Release;
+		};
+		3E2A29232868944800585E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-RailsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Violet Rails";
+			};
+			name = Debug;
+		};
+		3E2A29242868944800585E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRC8M44DMH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "violet.restarone.solutions.Violet-RailsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Violet Rails";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E2A28ED2868944600585E9E /* Build configuration list for PBXProject "Violet Rails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2A291A2868944800585E9E /* Debug */,
+				3E2A291B2868944800585E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E2A291C2868944800585E9E /* Build configuration list for PBXNativeTarget "Violet Rails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2A291D2868944800585E9E /* Debug */,
+				3E2A291E2868944800585E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E2A291F2868944800585E9E /* Build configuration list for PBXNativeTarget "Violet RailsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2A29202868944800585E9E /* Debug */,
+				3E2A29212868944800585E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E2A29222868944800585E9E /* Build configuration list for PBXNativeTarget "Violet RailsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2A29232868944800585E9E /* Debug */,
+				3E2A29242868944800585E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E2A28EA2868944600585E9E /* Project object */;
+}
