@@ -16,6 +16,7 @@
 		3E2A290D2868944800585E9E /* Violet_RailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A290C2868944800585E9E /* Violet_RailsTests.swift */; };
 		3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29162868944800585E9E /* Violet_RailsUITests.swift */; };
 		3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */; };
+		3E46E78A28689F8E00894CF6 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46E78928689F8E00894CF6 /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E46E78A28689F8E00894CF6 /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "Violet Rails";
+			packageProductDependencies = (
+				3E46E78928689F8E00894CF6 /* Turbo */,
+			);
 			productName = "Violet Rails";
 			productReference = 3E2A28F22868944600585E9E /* Violet Rails.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 3E2A28E92868944600585E9E;
+			packageReferences = (
+				3E46E78828689F8E00894CF6 /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = 3E2A28F32868944600585E9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -624,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E46E78828689F8E00894CF6 /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = exactVersion;
+				version = "7.0.0-rc.6";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E46E78928689F8E00894CF6 /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E46E78828689F8E00894CF6 /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E2A28EA2868944600585E9E /* Project object */;
 }
