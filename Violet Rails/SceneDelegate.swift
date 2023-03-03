@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         window!.rootViewController = navigationController
         navigationController.tabBar.delegate = self
+        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController.navigationBar.backgroundColor = UIColor.gray
         navigationController.pushViewController(viewController, animated: true)
         visit(url: URL(string: violetRailsApp)!)
     }
