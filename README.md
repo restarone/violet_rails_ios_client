@@ -1,6 +1,10 @@
 # Violet Rails iOS Client
 
-Every Violet Rails App is native iOS ready. 
+Every Violet Rails Web App is native iOS ready. 
+
+* Learn about Violet Rails, "the complete solution for building your online business" by visiting the official site: http://violet.restarone.solutions
+
+* Get involved with Violet Rails Server development: https://github.com/restarone/violet_rails
 
 See how http://violet.restarone.solutions seamlessly translates from Web to Native iOS below
 
