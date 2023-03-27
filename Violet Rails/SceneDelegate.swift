@@ -55,16 +55,9 @@ extension SceneDelegate: SessionDelegate {
 
 extension SceneDelegate: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        switch(item.tag) {
-        case 0:
-            visit(url: URL(string: "\(violetRailsApp)")!)
-        case 1:
-            visit(url: URL(string: "\(violetRailsApp)/blog")!)
-        case 2:
-            visit(url: URL(string: "\(violetRailsApp)/forum")!)
-        case 3:
-            visit(url: URL(string: "\(violetRailsApp)")!)
-        default:
+        if let tab = TabManager.shared.fetchedTabs.first(where: { $0.label.lowercased() == item.title?.lowercased() }) {
+            visit(url: URL(string: "\(violetRailsApp)\(tab.path)")!)
+        } else {
             print("unhandled tab bar selection error")
         }
     }

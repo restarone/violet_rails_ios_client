@@ -13,6 +13,8 @@ class ViewController: UINavigationController, UITabBarDelegate {
     let blog = UITabBarItem(title: "Blog", image: .checkmark, tag: 1)
     let forum = UITabBarItem(title: "Forum", image: .checkmark, tag: 2)
     
+    let configService = ConfigService()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
     }
@@ -21,10 +23,33 @@ class ViewController: UINavigationController, UITabBarDelegate {
         super.viewDidLoad()
         let navbarHeight = ((self.view.frame.height / 100) * 9.5) + 1
         tabBar.frame = CGRect(x: 0, y: self.view.frame.height - navbarHeight, width: self.view.frame.width, height: 49)
-        tabBar.items = [home, blog, forum]
+        
         self.view.addSubview(tabBar)
+        
+        getConfig()
     }
-
+    
+    func getConfig(){
+        Task {
+            do {
+                let config = try await configService.getConfig()
+                
+                let tabNavigation = config.data.attributes.properties.tabNavigation
+                
+                let tabItems = tabNavigation.enumerated().map({ index, tab in
+                    UITabBarItem(title: tab.label.capitalized, image: .checkmark, tag: index)
+                })
+                
+                tabBar.items = tabItems
+                
+                TabManager.shared.fetchedTabs = tabNavigation
+            } catch {
+                tabBar.items = [home, blog, forum]
+                
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
 
 extension UIApplication {

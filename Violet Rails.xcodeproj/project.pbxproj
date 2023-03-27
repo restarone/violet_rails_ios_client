@@ -17,6 +17,9 @@
 		3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29162868944800585E9E /* Violet_RailsUITests.swift */; };
 		3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */; };
 		3E46E78A28689F8E00894CF6 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46E78928689F8E00894CF6 /* Turbo */; };
+		D4561D0F29D138B300712B75 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4561D0E29D138B300712B75 /* ConfigService.swift */; };
+		D4561D1429D13AAE00712B75 /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4561D1329D13AAE00712B75 /* ConfigModel.swift */; };
+		D4561D1729D13EEE00712B75 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4561D1629D13EEE00712B75 /* TabManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		3E2A29122868944800585E9E /* Violet RailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Violet RailsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2A29162868944800585E9E /* Violet_RailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITests.swift; sourceTree = "<group>"; };
 		3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4561D0E29D138B300712B75 /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
+		D4561D1329D13AAE00712B75 /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
+		D4561D1629D13EEE00712B75 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		3E2A28F42868944600585E9E /* Violet Rails */ = {
 			isa = PBXGroup;
 			children = (
+				D4561D1529D13EE300712B75 /* Managers */,
+				D4561D1029D13A9800712B75 /* Modules */,
 				3E2A28F52868944600585E9E /* AppDelegate.swift */,
 				3E2A28F72868944600585E9E /* SceneDelegate.swift */,
 				3E2A28F92868944600585E9E /* ViewController.swift */,
@@ -127,6 +135,47 @@
 				3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */,
 			);
 			path = "Violet RailsUITests";
+			sourceTree = "<group>";
+		};
+		D4561D0D29D138A000712B75 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D4561D0E29D138B300712B75 /* ConfigService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D4561D1029D13A9800712B75 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D4561D1129D13A9D00712B75 /* Config */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D4561D1129D13A9D00712B75 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D4561D0D29D138A000712B75 /* Service */,
+				D4561D1229D13AA300712B75 /* Model */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D4561D1229D13AA300712B75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4561D1329D13AAE00712B75 /* ConfigModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4561D1529D13EE300712B75 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D4561D1629D13EEE00712B75 /* TabManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E2A28FA2868944600585E9E /* ViewController.swift in Sources */,
+				D4561D0F29D138B300712B75 /* ConfigService.swift in Sources */,
 				3E2A28F62868944600585E9E /* AppDelegate.swift in Sources */,
 				3E2A28F82868944600585E9E /* SceneDelegate.swift in Sources */,
+				D4561D1429D13AAE00712B75 /* ConfigModel.swift in Sources */,
+				D4561D1729D13EEE00712B75 /* TabManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRC8M44DMH;
+				DEVELOPMENT_TEAM = 9K367XY5KJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Violet Rails/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -455,6 +507,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +528,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NRC8M44DMH;
+				DEVELOPMENT_TEAM = 9K367XY5KJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Violet Rails/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -483,6 +536,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
