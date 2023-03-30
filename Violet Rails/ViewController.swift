@@ -19,10 +19,17 @@ class ViewController: UINavigationController, UITabBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let navbarHeight = ((self.view.frame.height / 100) * 9.5) + 1
-        tabBar.frame = CGRect(x: 0, y: self.view.frame.height - navbarHeight, width: self.view.frame.width, height: 49)
+        
+        tabBar.translatesAutoresizingMaskIntoConstraints = false
         tabBar.items = [home, blog, forum]
+        
         self.view.addSubview(tabBar)
+        
+        NSLayoutConstraint.activate([
+            tabBar.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            tabBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            tabBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+        ])
     }
 
 }
