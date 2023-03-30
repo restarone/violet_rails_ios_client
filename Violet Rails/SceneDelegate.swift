@@ -17,10 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         window!.rootViewController = navigationController
+        
         navigationController.tabBar.delegate = self
         navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
-        navigationController.navigationBar.backgroundColor = UIColor.gray
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithOpaqueBackground()
+        navigationBarAppearance.backgroundColor = .gray
+        
+        navigationController.navigationBar.standardAppearance = navigationBarAppearance
+        navigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+        
         navigationController.pushViewController(viewController, animated: true)
+        
         visit(url: URL(string: violetRailsApp)!)
     }
     
