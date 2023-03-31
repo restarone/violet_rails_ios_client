@@ -9,9 +9,6 @@ import UIKit
 
 class ViewController: UINavigationController, UITabBarDelegate {
     let tabBar = UITabBar()
-    let home = UITabBarItem(title: "Home",image: .checkmark, tag: 0)
-    let blog = UITabBarItem(title: "Blog", image: .checkmark, tag: 1)
-    let forum = UITabBarItem(title: "Forum", image: .checkmark, tag: 2)
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
@@ -21,7 +18,9 @@ class ViewController: UINavigationController, UITabBarDelegate {
         super.viewDidLoad()
         
         tabBar.translatesAutoresizingMaskIntoConstraints = false
-        tabBar.items = [home, blog, forum]
+        tabBar.items = navigationTabs.enumerated().map({ index, tab in
+            UITabBarItem(title: tab.title, image: .checkmark, tag: index)
+        })
         
         self.view.addSubview(tabBar)
         
