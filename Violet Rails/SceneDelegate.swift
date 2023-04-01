@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         navigationController.pushViewController(viewController, animated: true)
         
-        visit(url: URL(string: Link.ROOT)!)
+        visit(url: URL(string: App.ENDPOINT)!)
     }
     
     private func visit(url: URL) {
@@ -65,7 +65,7 @@ extension SceneDelegate: SessionDelegate {
 extension SceneDelegate: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if let selectedTab = navigationTabs.first(where: { $0.title == item.title }),
-           let url = URL(string: "\(Link.ROOT)\(selectedTab.path)"){
+           let url = URL(string: "\(App.ENDPOINT)\(selectedTab.path)"){
             visit(url: url)
         } else {
             print("unhandled tab bar selection error")
