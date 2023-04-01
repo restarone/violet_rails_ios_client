@@ -8,7 +8,7 @@
 import UIKit
 import Turbo
 import WebKit
-let violetRailsApp = "https://violet.restarone.solutions"
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     private lazy var navigationController = ViewController()
@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         navigationController.pushViewController(viewController, animated: true)
         
-        visit(url: URL(string: violetRailsApp)!)
+        visit(url: URL(string: App.ENDPOINT)!)
     }
     
     private func visit(url: URL) {
@@ -64,16 +64,10 @@ extension SceneDelegate: SessionDelegate {
 
 extension SceneDelegate: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        switch(item.tag) {
-        case 0:
-            visit(url: URL(string: "\(violetRailsApp)")!)
-        case 1:
-            visit(url: URL(string: "\(violetRailsApp)/blog")!)
-        case 2:
-            visit(url: URL(string: "\(violetRailsApp)/forum")!)
-        case 3:
-            visit(url: URL(string: "\(violetRailsApp)")!)
-        default:
+        if let selectedTab = navigationTabs.first(where: { $0.title == item.title }),
+           let url = URL(string: "\(App.ENDPOINT)\(selectedTab.path)"){
+            visit(url: url)
+        } else {
             print("unhandled tab bar selection error")
         }
     }

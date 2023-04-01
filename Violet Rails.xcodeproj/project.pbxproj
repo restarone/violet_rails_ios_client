@@ -17,6 +17,8 @@
 		3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29162868944800585E9E /* Violet_RailsUITests.swift */; };
 		3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */; };
 		3E46E78A28689F8E00894CF6 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46E78928689F8E00894CF6 /* Turbo */; };
+		D4C318CE29D7228100EA95CE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C318CD29D7228100EA95CE /* App.swift */; };
+		D4C318D029D7242100EA95CE /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C318CF29D7242100EA95CE /* NavigationTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		3E2A29122868944800585E9E /* Violet RailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Violet RailsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2A29162868944800585E9E /* Violet_RailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITests.swift; sourceTree = "<group>"; };
 		3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4C318CD29D7228100EA95CE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		D4C318CF29D7242100EA95CE /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		3E2A28F42868944600585E9E /* Violet Rails */ = {
 			isa = PBXGroup;
 			children = (
+				D4C318CB29D7226F00EA95CE /* Common */,
 				3E2A28F52868944600585E9E /* AppDelegate.swift */,
 				3E2A28F72868944600585E9E /* SceneDelegate.swift */,
 				3E2A28F92868944600585E9E /* ViewController.swift */,
@@ -127,6 +132,23 @@
 				3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */,
 			);
 			path = "Violet RailsUITests";
+			sourceTree = "<group>";
+		};
+		D4C318CB29D7226F00EA95CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D4C318CC29D7227400EA95CE /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D4C318CC29D7227400EA95CE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D4C318CD29D7228100EA95CE /* App.swift */,
+				D4C318CF29D7242100EA95CE /* NavigationTab.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +290,9 @@
 			files = (
 				3E2A28FA2868944600585E9E /* ViewController.swift in Sources */,
 				3E2A28F62868944600585E9E /* AppDelegate.swift in Sources */,
+				D4C318D029D7242100EA95CE /* NavigationTab.swift in Sources */,
 				3E2A28F82868944600585E9E /* SceneDelegate.swift in Sources */,
+				D4C318CE29D7228100EA95CE /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
