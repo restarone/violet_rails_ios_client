@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NavigationTab {
+struct NavigationTab: Hashable {
     var title: String
     var path: String
 }
