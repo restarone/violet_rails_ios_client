@@ -36,7 +36,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.scrollEdgeAppearance = tabBarAppearance
         tabBar.standardAppearance = tabBarAppearance
         
-        getTabs(endpoint: VisitableViewManager.shared.selectedURL)
+        Task {
+            try await getTabs(endpoint: VisitableViewManager.shared.selectedURL.absoluteString)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -77,21 +79,17 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = items
     }
     
-    func getTabs(endpoint: String){
-        VisitableViewManager.shared.setSelectedURL(endpoint)
-        
-        Task {
-            do {
-                let config = try await configService.getConfig(endpoint: endpoint)
-                
-                navigationTabs = config.data.attributes.properties.tabNavigation.map({ tab in
-                        .init(title: tab.label, path: tab.path)
-                })
-                
-                setupTabs()
-            } catch {
-              
-            }
+    func getTabs(endpoint: String) async throws {
+        do {
+            let config = try await configService.getConfig(endpoint: endpoint)
+            
+            navigationTabs = config.data.attributes.properties.tabNavigation.map({ tab in
+                    .init(title: tab.label, path: tab.path)
+            })
+            
+            setupTabs()
+        } catch {
+            throw error
         }
     }
 }

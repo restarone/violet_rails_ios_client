@@ -11,8 +11,8 @@ class VisitableViewManager {
     static let shared = VisitableViewManager()
 
     private(set) var loadingViewControllers = Set<BaseVisitableViewController>()
-    private(set) var baseURLs: [String] = [App.ENDPOINT]
-    private(set) var selectedURL: String = App.ENDPOINT
+    private(set) var baseURLs: [URL] = [URL(string: App.ENDPOINT)!]
+    private(set) var selectedURL: URL = URL(string: App.ENDPOINT)!
 
     private var onLoad: (() -> Void)?
 
@@ -38,11 +38,17 @@ class VisitableViewManager {
         self.onLoad = nil
     }
 
-    func setSelectedURL(_ endpoint: String) {
-        selectedURL = endpoint
+    func setSelectedURL(_ url: URL) {
+        selectedURL = url
     }
 
     func addBaseURL(_ url: URL) {
-        baseURLs.append(url.absoluteString)
+        baseURLs.append(url)
+    }
+    
+    func removeBaseURL(_ url: URL) {
+        if let index = baseURLs.firstIndex(where: { $0 == url }) {
+            baseURLs.remove(at: index)
+        }
     }
 }

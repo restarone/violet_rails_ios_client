@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
-         window?.makeKeyAndVisible()
+        window?.makeKeyAndVisible()
         
         tabBarController = TabBarController()
         
