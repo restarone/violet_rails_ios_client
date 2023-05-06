@@ -10,14 +10,32 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
-    let tabBarController = TabBarController()
+    var tabBarController: TabBarController?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-
+        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = tabBarController
+        
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
+        
+        tabBarController = TabBarController()
+        
+        guard let tabBarController = tabBarController else { return }
+        
+        tabBarController.setupTabs()
+        
+        VisitableViewManager.shared.registerOnLoadListener { [weak self] in
+            guard let self = self else { return }
+            
+            DispatchQueue.main.async {
+                self.window?.rootViewController = self.tabBarController
+                self.window?.makeKeyAndVisible()
+                
+                VisitableViewManager.shared.removeOnLoadListener()
+            }
+        }
     }
 }

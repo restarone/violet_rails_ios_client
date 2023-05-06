@@ -24,6 +24,8 @@ class BaseVisitableViewController: UIViewController, Visitable {
     public convenience init(url: URL) {
         self.init()
         self.visitableURL = url
+        
+        installVisitableView()
     }
     
     // MARK: View Lifecycle
@@ -31,7 +33,6 @@ class BaseVisitableViewController: UIViewController, Visitable {
     open override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        installVisitableView()
     }
 
     open override func viewWillAppear(_ animated: Bool) {
@@ -82,6 +83,8 @@ class BaseVisitableViewController: UIViewController, Visitable {
     private func visit(url: URL) {
         visitableURL = url
         session.visit(self)
+        
+        VisitableViewManager.shared.addLoadingViewController(self)
     }
 }
 
@@ -96,5 +99,9 @@ extension BaseVisitableViewController: SessionDelegate {
     
     func sessionWebViewProcessDidTerminate(_ session: Turbo.Session) {
         
+    }
+    
+    func sessionDidLoadWebView(_ session: Session) {
+        VisitableViewManager.shared.removeLoadingViewController(self)
     }
 }
