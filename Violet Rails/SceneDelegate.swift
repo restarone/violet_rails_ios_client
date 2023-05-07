@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let tabBarController = tabBarController else { return }
         
-        tabBarController.setupTabs()
+        tabBarController.setupTabs(endpoint: App.ENDPOINT)
         
         VisitableViewManager.shared.registerOnLoadListener { [weak self] in
             guard let self = self else { return }

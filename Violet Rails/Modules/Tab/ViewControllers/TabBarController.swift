@@ -49,9 +49,20 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         return true
     }
 
-    func setupTabs(){
-        var items = navigationTabs.enumerated().map({ index, tab in
-            let vc = BaseVisitableViewController(url: URL(string: "\(App.ENDPOINT)\(tab.path)")!)
+    func setupTabs(endpoint: String){
+        var items: [UINavigationController] = navigationTabs.enumerated().compactMap({ index, tab in
+            var url: URL?
+            
+            if tab.path.prefix(1) == "/" {
+                url = URL(string: "\(endpoint)\(tab.path)")
+            } else {
+                url = URL(string: "https://\(tab.path)")
+            }
+            
+            guard let url = url else { return nil }
+            
+            let vc = BaseVisitableViewController(url: url)
+            
             let navigationController = UINavigationController(rootViewController: vc)
 
             navigationController.navigationBar.standardAppearance = navigationBarAppearance
@@ -87,7 +98,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
                     .init(title: tab.label, path: tab.path)
             })
             
-            setupTabs()
+            setupTabs(endpoint: endpoint)
         } catch {
             throw error
         }
