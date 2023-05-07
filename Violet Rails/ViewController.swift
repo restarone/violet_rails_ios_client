@@ -18,9 +18,6 @@ class ViewController: UINavigationController, UITabBarDelegate {
         super.viewDidLoad()
         
         tabBar.translatesAutoresizingMaskIntoConstraints = false
-        tabBar.items = navigationTabs.enumerated().map({ index, tab in
-            UITabBarItem(title: tab.title, image: .checkmark, tag: index)
-        })
         
         self.view.addSubview(tabBar)
         
