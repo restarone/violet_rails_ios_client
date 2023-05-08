@@ -17,8 +17,15 @@
 		3E2A29172868944800585E9E /* Violet_RailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29162868944800585E9E /* Violet_RailsUITests.swift */; };
 		3E2A29192868944800585E9E /* Violet_RailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */; };
 		3E46E78A28689F8E00894CF6 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46E78928689F8E00894CF6 /* Turbo */; };
-		D4720C9C29F5075D002CA3E1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4720C9B29F5075D002CA3E1 /* TabBarController.swift */; };
+		D419488F2A04E56E001E6CD3 /* VisitableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D419488E2A04E56E001E6CD3 /* VisitableViewManager.swift */; };
+		D41948932A04E5F1001E6CD3 /* AppPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41948922A04E5F1001E6CD3 /* AppPickerViewController.swift */; };
+		D419489A2A04E67C001E6CD3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41948992A04E67C001E6CD3 /* TabBarController.swift */; };
+		D419489C2A04E68E001E6CD3 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D419489B2A04E68E001E6CD3 /* ConfigService.swift */; };
+		D419489F2A04E6A6001E6CD3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D419489E2A04E6A6001E6CD3 /* Config.swift */; };
+		D44400642A053AC5006390B0 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44400632A053AC5006390B0 /* Alerts.swift */; };
 		D4720C9E29F51952002CA3E1 /* BaseVisitableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4720C9D29F51952002CA3E1 /* BaseVisitableViewController.swift */; };
+		D485677F2A08ECBD00B739E4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485677E2A08ECBD00B739E4 /* SessionManager.swift */; };
+		D48567822A08FBD400B739E4 /* WKWebView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48567812A08FBD400B739E4 /* WKWebView+Extensions.swift */; };
 		D4C318CE29D7228100EA95CE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C318CD29D7228100EA95CE /* App.swift */; };
 		D4C318D029D7242100EA95CE /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C318CF29D7242100EA95CE /* NavigationTab.swift */; };
 /* End PBXBuildFile section */
@@ -54,8 +61,15 @@
 		3E2A29122868944800585E9E /* Violet RailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Violet RailsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2A29162868944800585E9E /* Violet_RailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITests.swift; sourceTree = "<group>"; };
 		3E2A29182868944800585E9E /* Violet_RailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violet_RailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D4720C9B29F5075D002CA3E1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D419488E2A04E56E001E6CD3 /* VisitableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitableViewManager.swift; sourceTree = "<group>"; };
+		D41948922A04E5F1001E6CD3 /* AppPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPickerViewController.swift; sourceTree = "<group>"; };
+		D41948992A04E67C001E6CD3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D419489B2A04E68E001E6CD3 /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
+		D419489E2A04E6A6001E6CD3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D44400632A053AC5006390B0 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		D4720C9D29F51952002CA3E1 /* BaseVisitableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVisitableViewController.swift; sourceTree = "<group>"; };
+		D485677E2A08ECBD00B739E4 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		D48567812A08FBD400B739E4 /* WKWebView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extensions.swift"; sourceTree = "<group>"; };
 		D4C318CD29D7228100EA95CE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		D4C318CF29D7242100EA95CE /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,11 +123,11 @@
 		3E2A28F42868944600585E9E /* Violet Rails */ = {
 			isa = PBXGroup;
 			children = (
-				D4C318CB29D7226F00EA95CE /* Common */,
 				3E2A28F52868944600585E9E /* AppDelegate.swift */,
 				3E2A28F72868944600585E9E /* SceneDelegate.swift */,
 				3E2A28F92868944600585E9E /* ViewController.swift */,
-				D4720C9B29F5075D002CA3E1 /* TabBarController.swift */,
+				D4C318CB29D7226F00EA95CE /* Common */,
+				D41948902A04E5D6001E6CD3 /* Modules */,
 				D4720C9D29F51952002CA3E1 /* BaseVisitableViewController.swift */,
 				3E2A28FB2868944600585E9E /* Main.storyboard */,
 				3E2A28FE2868944800585E9E /* Assets.xcassets */,
@@ -140,9 +154,88 @@
 			path = "Violet RailsUITests";
 			sourceTree = "<group>";
 		};
+		D419488D2A04E561001E6CD3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D419488E2A04E56E001E6CD3 /* VisitableViewManager.swift */,
+				D485677E2A08ECBD00B739E4 /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D41948902A04E5D6001E6CD3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D41948942A04E636001E6CD3 /* Tab */,
+				D41948912A04E5E5001E6CD3 /* AppPicker */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D41948912A04E5E5001E6CD3 /* AppPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D41948922A04E5F1001E6CD3 /* AppPickerViewController.swift */,
+			);
+			path = AppPicker;
+			sourceTree = "<group>";
+		};
+		D41948942A04E636001E6CD3 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D419489D2A04E69F001E6CD3 /* Models */,
+				D41948982A04E665001E6CD3 /* ViewControllers */,
+				D41948972A04E64F001E6CD3 /* Service */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		D41948972A04E64F001E6CD3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D419489B2A04E68E001E6CD3 /* ConfigService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D41948982A04E665001E6CD3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D41948992A04E67C001E6CD3 /* TabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D419489D2A04E69F001E6CD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D419489E2A04E6A6001E6CD3 /* Config.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D44400622A053ABC006390B0 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D44400632A053AC5006390B0 /* Alerts.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		D48567802A08FBC100B739E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D48567812A08FBD400B739E4 /* WKWebView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D4C318CB29D7226F00EA95CE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D48567802A08FBC100B739E4 /* Extensions */,
+				D44400622A053ABC006390B0 /* Alerts */,
+				D419488D2A04E561001E6CD3 /* Managers */,
 				D4C318CC29D7227400EA95CE /* Constants */,
 			);
 			path = Common;
@@ -295,12 +388,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E2A28FA2868944600585E9E /* ViewController.swift in Sources */,
+				D419488F2A04E56E001E6CD3 /* VisitableViewManager.swift in Sources */,
 				3E2A28F62868944600585E9E /* AppDelegate.swift in Sources */,
+				D419489A2A04E67C001E6CD3 /* TabBarController.swift in Sources */,
+				D419489F2A04E6A6001E6CD3 /* Config.swift in Sources */,
 				D4C318D029D7242100EA95CE /* NavigationTab.swift in Sources */,
 				3E2A28F82868944600585E9E /* SceneDelegate.swift in Sources */,
-				D4720C9C29F5075D002CA3E1 /* TabBarController.swift in Sources */,
 				D4C318CE29D7228100EA95CE /* App.swift in Sources */,
+				D41948932A04E5F1001E6CD3 /* AppPickerViewController.swift in Sources */,
 				D4720C9E29F51952002CA3E1 /* BaseVisitableViewController.swift in Sources */,
+				D44400642A053AC5006390B0 /* Alerts.swift in Sources */,
+				D419489C2A04E68E001E6CD3 /* ConfigService.swift in Sources */,
+				D485677F2A08ECBD00B739E4 /* SessionManager.swift in Sources */,
+				D48567822A08FBD400B739E4 /* WKWebView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
