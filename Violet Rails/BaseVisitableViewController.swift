@@ -16,8 +16,13 @@ class BaseVisitableViewController: UIViewController, Visitable {
     private lazy var session: Session = {
         let configuration = WKWebViewConfiguration()
         configuration.applicationNameForUserAgent = "VioletRailsiOS"
+        
         let session = Session(webViewConfiguration: configuration)
+        
         session.delegate = self
+        session.webView.uiDelegate = self
+        session.webView.navigationDelegate = self
+        
         return session
     }()
 
@@ -43,6 +48,14 @@ class BaseVisitableViewController: UIViewController, Visitable {
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         visitableDelegate?.visitableViewDidAppear(self)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        visitableView.webView?.configuration.websiteDataStore.httpCookieStore.getAllCookies({ cookies in
+            
+        })
     }
 
     // MARK: Visitable
@@ -103,5 +116,19 @@ extension BaseVisitableViewController: SessionDelegate {
     
     func sessionDidLoadWebView(_ session: Session) {
         VisitableViewManager.shared.removeLoadingViewController(self)
+    }
+}
+
+extension BaseVisitableViewController: WKUIDelegate, WKNavigationDelegate {
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        session.webView.loadDiskCookies(for: visitableURL.host!){
+            decisionHandler(.allow)
+        }
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        session.webView.writeDiskCookies(for: visitableURL.host!){
+            decisionHandler(.allow)
+        }
     }
 }

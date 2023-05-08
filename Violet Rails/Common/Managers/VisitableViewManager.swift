@@ -11,13 +11,24 @@ class VisitableViewManager {
     static let shared = VisitableViewManager()
 
     private(set) var loadingViewControllers = Set<BaseVisitableViewController>()
-    private(set) var baseURLs: [URL] = [URL(string: App.ENDPOINT)!]
-    private(set) var selectedURL: URL = URL(string: App.ENDPOINT)!
+    private(set) var baseURLs: [URL] {
+        didSet {
+            SessionManager.setBaseURLs(urls: baseURLs)
+        }
+    }
+    private(set) var selectedURL: URL {
+        didSet {
+            SessionManager.setSelectedURL(url: selectedURL)
+        }
+    }
 
     private var onLoad: (() -> Void)?
 
-    private init() { }
-
+    private init() {
+        self.baseURLs = SessionManager.getBaseURLs() ?? [URL(string: App.ENDPOINT)!]
+        self.selectedURL = SessionManager.getSelectedURL() ?? URL(string: App.ENDPOINT)!
+    }
+    
     func addLoadingViewController(_ viewController: BaseVisitableViewController) {
         loadingViewControllers.insert(viewController)
     }
