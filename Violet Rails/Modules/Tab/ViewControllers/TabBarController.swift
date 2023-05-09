@@ -85,7 +85,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
             return navigationController
         }
 
-        items.append(appItem)
+        if !App.STANDALONE_MODE {
+            items.append(appItem)
+        }
 
         self.viewControllers = items
     }

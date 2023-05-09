@@ -9,4 +9,5 @@ import Foundation
 
 struct App {
     public static let ENDPOINT = "https://violet.restarone.solutions"
+    public static let STANDALONE_MODE = false
 }
